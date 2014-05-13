@@ -1,0 +1,21 @@
+#!/usr/bin/env php
+<?php
+
+$root = realpath(__DIR__ . '/../');
+$file = basename(__FILE__);
+
+require "$root/vendor/autoload.php";
+
+use Opendi\Skeletor\Application;
+
+if ($argc !== 3) {
+    die("Invalid number of arguments.\n Usage: $file <num> <num>\n");
+}
+
+$x = $argv[1];
+$y = $argv[2];
+
+$application = new Application;
+$result = $application->add($x, $y);
+
+echo "$x + $y = $result\n";

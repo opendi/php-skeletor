@@ -1,0 +1,27 @@
+{
+    "name": "opendi/skeletor",
+    "description": "PHP project skeleton",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ivan Habunek",
+            "email": "ivan.habunek@gmail.com"
+        }
+    ],
+    "require": {
+
+    },
+    "require-dev": {
+        "mockery/mockery": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Opendi\\Skeletor\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Opendi\\Skeletor\\Tests\\": "tests/"
+        }
+    }
+}
